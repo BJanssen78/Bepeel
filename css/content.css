@@ -7,7 +7,6 @@
 }
 div.content-tegels > *{
     font-size: 2em;
-    padding: 50px 0;
     background-color: rgb(13, 231, 31);
     margin: 15px;
     width: 150px;
@@ -17,15 +16,20 @@ div.content-tegels > *{
     border: 1px solid black;
     border-radius: 15px;
     box-shadow: 2px 2px black;
-    /* vertical-align: middle; */
+    text-decoration: none;
+    color: black;
     
 }
-.box-tegels:hover{
+.content-tegels a:hover{
     box-shadow: -2px -2px black;
     border: 1px solid black;
+    border-radius: 15px;
 }
 .intro-content{
     font-size: 1.3em;
     padding: 5%;
     line-height: 1.5em;
+}
+.box-tegels > p{
+    vertical-align: middle;
 }
