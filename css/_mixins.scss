@@ -1,0 +1,33 @@
+// see cssreadme.md file for more info
+@import './variables';
+
+@mixin titel-headers{
+    width: 100%;
+}
+
+@mixin img-square {
+    padding: 0;
+    margin: 15px;
+    width: $img-square;
+    height: $img-square;
+    object-fit: cover;
+    border: $clr-img-bord;
+}
+@mixin img-round {
+    padding: 0;
+    margin: 15px;
+    width: $img-square;
+    height: $img-square;
+    object-fit: cover;
+    border-radius: 50%;
+    border: $clr-img-bord;
+}
+@mixin img-oval{
+    padding: 0;
+    margin: 15px;
+    width: $img-square;
+    // height: $img-square;
+    object-fit: cover;
+    border-radius: 50%;
+    border: $clr-img-bord;
+}

@@ -1,0 +1,65 @@
+// see cssreadme.md file for more info
+@import './mixins';
+@import './variables';
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $clr-main-bg;
+    color: $clr-main-font;
+    text-align: center;
+
+    @include titel-headers;
+}
+#header{
+    color: $clr-head-font;
+    text-shadow: 1.5px 1.5px $clr-head-shadow;
+    font-size: 6vh;
+    height: 80px;
+    text-align: center;
+    padding-top: 25px;
+}
+#navigatie{
+    background-color: yellow;
+    color: black;
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+    .navigatie-lijst{
+        text-align: center;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        .navigatie-item{
+            display: inline-block;
+            padding: 1em 1vh;
+            font-size: 2vh;
+            font-weight: 600;
+            width: 20%;
+
+            &:hover{
+                background-color: rgba(0, 0, 0, .5);
+            }
+        }
+    }
+}
+
+#side-menu{
+    color: yellow;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#content{
+    text-align: center;
+
+    
+}
+.test-img{
+    // @include img-round;
+    @include img-oval;
+    // @include img-square
+}
