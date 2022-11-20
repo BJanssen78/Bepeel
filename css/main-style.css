@@ -10,8 +10,12 @@ h2 {
   font-weight: 700;
 }
 
+html, body {
+  min-height: 100%;
+}
+
 body {
-  background-color: black;
+  background-image: linear-gradient(black, black, yellow);
   color: yellow;
   font-size: 1.5rem;
   text-align: center;
@@ -24,6 +28,7 @@ body {
   min-height: 155px;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
 }
 
 #navigatie {
