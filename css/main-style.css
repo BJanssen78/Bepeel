@@ -1,0 +1,58 @@
+h1 {
+  font-size: 1.5em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+body {
+  background-color: black;
+  color: yellow;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  text-shadow: 2px 2px red;
+  font-size: 3rem;
+  min-height: 155px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#navigatie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  color: black;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  min-height: 30px;
+  margin-bottom: 15px;
+}
+#navigatie .navigatie-lijst .navigatie-item {
+  display: inline;
+  justify-content: space-around;
+  padding: 5px;
+}
+#navigatie .navigatie-lijst .navigatie-item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+img {
+  margin: 15px;
+  width: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid red;
+}/*# sourceMappingURL=main-style.css.map */

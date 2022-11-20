@@ -1,13 +1,18 @@
-// see cssreadme.md file for more info
+$clr-blk:black;
+$clr-ylw:yellow;
+$clr-red:red;
 
-// Color variables
-$clr-main-font:yellow;
-$clr-main-bg:black;
-$clr-href-font:$clr-main-bg;
-$clr-href-bg:$clr-main-font;
-$clr-head-font:red;
-$clr-head-shadow:$clr-main-font;
-$clr-img-bord:4px solid $clr-main-font;
+$fnt-size:1.5rem;
 
-// Size variables
-$img-square: 200px;
+$border-size:3px;
+
+h1{
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: 700;
+}

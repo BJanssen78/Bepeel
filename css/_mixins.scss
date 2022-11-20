@@ -1,33 +1,32 @@
-// see cssreadme.md file for more info
-@import './variables';
-
-@mixin titel-headers{
-    width: 100%;
+@mixin navigatie {
+    .navigatie-lijst{
+        
+        .navigatie-item{
+            display: inline;
+            justify-content: space-around;
+            padding: 5px;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+        }
+    }
 }
 
-@mixin img-square {
-    padding: 0;
+@mixin img-round{
     margin: 15px;
-    width: $img-square;
-    height: $img-square;
-    object-fit: cover;
-    border: $clr-img-bord;
-}
-@mixin img-round {
-    padding: 0;
-    margin: 15px;
-    width: $img-square;
-    height: $img-square;
-    object-fit: cover;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: $clr-img-bord;
+    object-fit: cover;
+    border: 1px solid $clr-ylw;
 }
+
 @mixin img-oval{
-    padding: 0;
     margin: 15px;
-    width: $img-square;
-    // height: $img-square;
-    object-fit: cover;
+    width: 100px;
+    // height: 100px;
     border-radius: 50%;
-    border: $clr-img-bord;
+    object-fit: cover;
+    border: 3px solid $clr-red;
 }
