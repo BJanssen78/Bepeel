@@ -60,4 +60,17 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   border: 3px solid red;
+}
+
+#footer {
+  color: black;
+  text-align: left;
+}
+#footer ul {
+  margin-bottom: 25px;
+}
+#footer .footer-resource-item {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 25px;
 }/*# sourceMappingURL=main-style.css.map */
