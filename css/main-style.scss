@@ -40,8 +40,8 @@ img{
     @include img-oval;
 }
 #footer{
-    color: $clr-blk;
-    text-align: left;
+    @include footer-content;
+    
     ul{
         margin-bottom: 25px;
     }

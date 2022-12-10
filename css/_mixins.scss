@@ -30,3 +30,30 @@
     object-fit: cover;
     border: 3px solid $clr-red;
 }
+
+@mixin footer-content{
+    color: $clr-blk;
+    text-shadow: 2px 1px $clr-red;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    // justify-content: center;
+    align-items: center;
+    width: 100%;
+    h2{
+        width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    img{
+        max-width: 30px;
+        border: none;
+        margin: 0;
+        padding-right: 5px;
+    }
+}

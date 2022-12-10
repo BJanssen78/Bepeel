@@ -64,7 +64,26 @@ img {
 
 #footer {
   color: black;
+  text-shadow: 2px 1px red;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+#footer h2 {
+  width: 100%;
+}
+#footer a {
+  text-decoration: none;
+}
+#footer img {
+  max-width: 30px;
+  border: none;
+  margin: 0;
+  padding-right: 5px;
 }
 #footer ul {
   margin-bottom: 25px;
