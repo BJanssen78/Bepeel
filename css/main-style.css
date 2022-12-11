@@ -53,7 +53,7 @@ body {
   cursor: pointer;
 }
 
-img {
+.test-img {
   margin: 15px;
   width: 100px;
   border-radius: 50%;
@@ -64,13 +64,13 @@ img {
 
 #footer {
   color: black;
-  text-shadow: 2px 1px red;
   text-align: left;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-evenly;
   width: 100%;
 }
 #footer h2 {
@@ -78,15 +78,21 @@ img {
 }
 #footer a {
   text-decoration: none;
+  color: black;
+  width: 100%;
+  transition: 350ms background-color ease-in-out;
 }
-#footer img {
+#footer a:hover {
+  background-color: red;
+}
+#footer a i {
+  padding: 0 10px 10px 0;
+}
+#footer .resource-logo {
   max-width: 30px;
   border: none;
   margin: 0;
   padding-right: 5px;
-}
-#footer ul {
-  margin-bottom: 25px;
 }
 #footer .footer-resource-item {
   text-decoration: none;

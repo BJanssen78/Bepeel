@@ -33,14 +33,15 @@
 
 @mixin footer-content{
     color: $clr-blk;
-    text-shadow: 2px 1px $clr-red;
+    // text-shadow: 2px 1px $clr-red;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 20px;
     // justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
     width: 100%;
     h2{
         width: 100%;
@@ -48,9 +49,20 @@
 
     a{
         text-decoration: none;
+        color: $clr-blk;
+        width: 100%;
+        transition: 350ms background-color ease-in-out;
+
+        &:hover{
+            background-color: $clr-red;
+        }
+
+        i{
+            padding: 0 10px 10px 0;
+        }
     }
 
-    img{
+    .resource-logo{
         max-width: 30px;
         border: none;
         margin: 0;

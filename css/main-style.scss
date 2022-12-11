@@ -36,19 +36,15 @@ body{
     @include navigatie;
 }
 
-img{
+.test-img{
     @include img-oval;
 }
 #footer{
     @include footer-content;
     
-    ul{
-        margin-bottom: 25px;
-    }
     .footer-resource-item{
         text-decoration: none;
         list-style-type: none;
         margin-left: 25px;
-
     }
 }
