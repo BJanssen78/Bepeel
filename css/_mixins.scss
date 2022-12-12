@@ -1,14 +1,20 @@
 @mixin navigatie {
     .navigatie-lijst{
-        
+                
         .navigatie-item{
             display: inline;
             justify-content: space-around;
             padding: 5px;
+
             &:hover{
                 background-color: rgba(0, 0, 0, 0.5);
                 cursor: pointer;
             }
+            .navigatie-link{
+                color: $clr-blk;
+                text-decoration: none;
+            }
+            
         }
     }
 }
@@ -38,6 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    flex-grow: 1;
     gap: 20px;
     // justify-content: center;
     align-items: flex-start;

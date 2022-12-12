@@ -16,6 +16,7 @@ html, body {
 
 body {
   background-image: linear-gradient(black, black, yellow);
+  background-attachment: fixed;
   color: yellow;
   font-size: 1.5rem;
   text-align: center;
@@ -52,6 +53,10 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+#navigatie .navigatie-lijst .navigatie-item .navigatie-link {
+  color: black;
+  text-decoration: none;
+}
 
 .test-img {
   margin: 15px;
@@ -68,6 +73,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  flex-grow: 1;
   gap: 20px;
   align-items: flex-start;
   justify-content: space-evenly;

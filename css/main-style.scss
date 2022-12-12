@@ -6,6 +6,7 @@ html, body{
 }
 body{
     background-image: linear-gradient($clr-blk, $clr-blk, $clr-ylw);
+    background-attachment: fixed;
     color: $clr-ylw;
     font-size: $fnt-size;
     text-align: center;
