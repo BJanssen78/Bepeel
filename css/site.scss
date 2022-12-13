@@ -1,0 +1,21 @@
+@import './mixins';
+@import './variables';
+
+#content{
+    text-align: center;
+}
+.img-poster{
+    // padding: 10px;
+    border: 10px solid transparent;
+
+    &:hover{
+        border: 10px solid $clr-red;
+        cursor: pointer;
+    }
+}
+
+.country-list-item{
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+}

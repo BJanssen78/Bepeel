@@ -81,27 +81,49 @@ const resources = [
         website: "https://www.w3schools.com/",
         externLogo: root + imgMap + "logo_language.jpg",
     },
+    {
+        kanaal: "website",
+        naam: "Karl Groves",
+        website: "https://karlgroves.com/links-are-not-buttons-neither-are-divs-and-spans/",
+        externLogo: root + imgMap + "logo_website.png",
+    },
 ];
 
 const navigatie = [
     {
-        titel: 'Home',
-        link: 'www.bepeel.nl',
-        target: '_self',
+        titel: "Home",
+        link: "http://www.bepeel.nl",
+        target: "_self",
+        catergorie: "main",
     },
     {
         titel: 'Projects',
-        link: 'projects.html',
+        link: root + pageMap + 'projects.html',
         target: '_self',
+        catergorie: "main",
     },
     {
         titel: 'About Me',
-        link: 'projects.html',
+        link: root + pageMap + 'construction.html',
         target: '_self',
+        catergorie: "main",
     },
     {
         titel: 'Contact',
-        link: root + pageMap + 'projects.html',
+        link: root + pageMap + 'construction.html',
         target: '_self',
+        catergorie: "main",
+    },
+    {
+        titel: 'Film finder',
+        link: root + pageMap + 'filmfinder.html',
+        target: '_self',
+        catergorie: "projects",
+    },
+    {
+        titel: 'Random Persons',
+        link: root + pageMap + 'randomPerson.html',
+        target: '_self',
+        catergorie: "projects",
     },
 ];

@@ -49,3 +49,40 @@ body{
         margin-left: 25px;
     }
 }
+.side-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .side-nav-list{
+        width: 100%;
+
+        .side-nav-item{
+            display: inline-block;
+            margin: 10px;
+        }
+    }
+    @media only screen and (max-width:400px){
+        width: 100%;
+
+        .side-nav-btn{
+            text-decoration: none;
+            color: $clr-blk;
+            background-color: $clr-ylw;
+            border-radius: 25px;
+            font-size: 1.4rem;
+            border: 1px solid $clr-ylw;
+            box-shadow: 2px 4px $clr-red;
+            transition: 350ms background-color, box-shadow ease-out;
+            cursor: pointer;
+            // margin: 5px;
+            padding: 5px;
+            min-width: 190px;
+            max-width: 200px;
+            &:hover{
+                box-shadow: 0px 0px $clr-red;
+                background-color: $clr-red;
+                border: 1px solid $clr-blk;
+            }
+        }
+    }
+}

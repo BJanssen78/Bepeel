@@ -1,0 +1,157 @@
+h1 {
+  font-size: 1.5em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#header {
+  background-color: black;
+  text-shadow: 1.5px 1.5px yellow;
+  font-size: 6vh;
+  height: 80px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#side-menu {
+  color: yellow;
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: center;
+}
+#side-menu .side-lijst .side-item {
+  display: inline-block;
+  padding: 0 10px;
+}
+#side-menu .side-radio-label {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 1.2em;
+  padding: 5px 0;
+  align-items: center;
+}
+#side-menu input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: yellow;
+  border: 1px solid yellow;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  display: grid;
+  width: 1.5em;
+  place-content: center;
+  margin: 0;
+}
+#side-menu input[type=radio]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 200ms transform ease-in-out;
+  box-shadow: inset 1em 1em red;
+}
+#side-menu input[type=radio]:checked::before {
+  transform: scale(1);
+}
+#side-menu input[type=text] {
+  width: 53%;
+  background-color: rgba(255, 255, 0, 0.9);
+  height: 1.3rem;
+  padding: 5px;
+  color: black;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  transition: border 250ms;
+  height: 27px;
+}
+#side-menu input[type=text]::-moz-placeholder {
+  color: black;
+  transform: translateX(10px);
+}
+#side-menu input[type=text]:-ms-input-placeholder {
+  color: black;
+  transform: translateX(10px);
+}
+#side-menu input[type=text]::placeholder {
+  color: black;
+  transform: translateX(10px);
+}
+#side-menu input[type=text]:focus-within {
+  border: 3px solid red;
+}
+#side-menu .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+#side-menu #search-btn {
+  background-color: yellow;
+  color: black;
+  border: 1px solid yellow;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 350ms border;
+}
+#side-menu #search-btn:hover {
+  border: 3px solid red;
+}
+#side-menu #search-btn .search-btn-icon {
+  font-size: 2em;
+  padding-top: 3px;
+}
+
+#content {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+}
+#content .movie-poster-link {
+  width: 100;
+}
+#content .movie-poster {
+  border: 1px solid yellow;
+}
+#content .movie-poster:hover {
+  opacity: 0.2;
+}
+
+.error-msg {
+  font-size: 2.5em;
+  color: yellow;
+}/*# sourceMappingURL=filmfinder.css.map */

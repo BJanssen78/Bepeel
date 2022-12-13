@@ -1,0 +1,88 @@
+@import './mixins';
+@import './variables';
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#header{
+    background-color: black;
+    text-shadow: 1.5px 1.5px yellow;
+    font-size: 6vh;
+    height: 80px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#side-menu{
+    color: yellow;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+    
+    .side-lijst{
+        .side-item{
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
+
+    .side-radio-label{
+        display: grid;
+        grid-template-columns: 1em auto;
+        gap: 1.2em;
+        padding: 5px 0;
+        align-items: center;
+    }
+    input[type="radio"]{
+    @include radio-input;
+    }
+    input[type="text"]{
+        @include zoekbalk;
+    }
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+    }
+    #search-btn{
+        background-color: yellow;
+        color: black;
+        border: 1px solid yellow;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 5px;
+        // border: 2px solid red;
+        cursor: pointer;
+        transition: 350ms border;
+        &:hover{
+            border: 3px solid red;
+
+        }
+
+        .search-btn-icon{
+            font-size: 2em;
+            padding-top: 3px;
+        }
+    }
+}
+
+#content{
+    text-align: center;
+
+    .movie-poster-link{
+        width: 100;
+    }
+
+    @include poster;
+
+    
+}
+.error-msg{
+    font-size: 2.5em;
+    color: yellow;
+}

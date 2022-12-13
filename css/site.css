@@ -1,0 +1,41 @@
+h1 {
+  font-size: 1.5em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding: 10px;
+  font-weight: 700;
+}
+
+#content {
+  text-align: center;
+}
+
+.img-poster {
+  border: 10px solid transparent;
+}
+.img-poster:hover {
+  border: 10px solid red;
+  cursor: pointer;
+}
+
+.country-list-item {
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=site.css.map */

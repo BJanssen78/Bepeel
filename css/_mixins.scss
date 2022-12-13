@@ -1,3 +1,5 @@
+@import './variables';
+
 @mixin navigatie {
     .navigatie-lijst{
                 
@@ -39,17 +41,28 @@
 
 @mixin footer-content{
     color: $clr-blk;
-    // text-shadow: 2px 1px $clr-red;
+    text-shadow: 2px 1px $clr-red;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    word-wrap:break-word;
     flex-direction: row;
     flex-grow: 1;
     gap: 20px;
-    // justify-content: center;
     align-items: flex-start;
     justify-content: space-evenly;
     width: 100%;
+    ul{
+        flex-grow: 2;
+    }
+
+    @media only screen and (max-width:400px) {
+        ul{
+            font-size: 1em;
+        }
+        
+    }
+
     h2{
         width: 100%;
     }
@@ -76,3 +89,72 @@
         padding-right: 5px;
     }
 }
+
+
+// project filmfinder
+@mixin radio-input {
+    appearance: none;
+    color: yellow;
+    border: 1px solid yellow;
+    width: $radio;
+    height: $radio;
+    border-radius: 50%;
+    display: grid;
+    width: $radio;
+    place-content: center;
+    margin: 0;
+
+    &::before{
+        content: "";
+        width: $radio-inside;
+        height: $radio-inside;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 200ms transform ease-in-out;
+        box-shadow: inset 1em 1em red;
+    }
+    &:checked::before{
+        transform: scale(1);
+    }
+}
+
+@mixin poster {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+    .movie-poster{
+        border: 1px solid yellow;
+        
+        &:hover{
+            opacity: 0.2;
+        }
+    }
+}
+
+@mixin zoekbalk{
+    width: 53%;
+    background-color: rgba(255, 255, 0, 0.9);
+    height: 1.3rem;
+    padding: 5px;
+    color: black;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    transition: border 250ms ;
+    height: 27px;
+
+    &::placeholder{
+        color: black;
+        transform: translateX(10px);
+    }
+
+    &:focus-within{
+        border: 3px solid red;
+    }
+    
+}
+// end of filmfinder
+
