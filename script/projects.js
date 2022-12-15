@@ -32,12 +32,5 @@ let sideNavMenu = navigatie.filter(projects => projects.catergorie === 'projects
         // createA.setAttribute('value', e.titel);
         createA.setAttribute('id',  e.titel);
         createA.innerHTML = e.titel;
-    });
-
-const btnList = document.querySelectorAll('#side-nav-list .side-nav-btn');
-    Array.from(btnList).forEach(function(btn){
-        btn.addEventListener('click', function(btnEvent){
-            let btnTitle = btnEvent.target.innerHTML;
-            console.log(btnTitle);
-            })
-    });
+    }
+);

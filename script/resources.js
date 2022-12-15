@@ -87,6 +87,18 @@ const resources = [
         website: "https://karlgroves.com/links-are-not-buttons-neither-are-divs-and-spans/",
         externLogo: root + imgMap + "logo_website.png",
     },
+    {
+        kanaal: "website",
+        naam: "Google Fonts/Icons",
+        website: "https://fonts.google.com/",
+        externLogo: root + imgMap + "logo_website.png",
+    },
+    {
+        kanaal: "website",
+        naam: "Font Awesome",
+        website: "https://fontawesome.com/",
+        externLogo: root + imgMap + "logo_website.png",
+    },
 ];
 
 const navigatie = [
@@ -95,35 +107,41 @@ const navigatie = [
         link: "http://www.bepeel.nl",
         target: "_self",
         catergorie: "main",
+        icon: 'home',
     },
     {
         titel: 'Projects',
         link: root + pageMap + 'projects.html',
         target: '_self',
         catergorie: "main",
+        icon: 'analytics',
     },
     {
         titel: 'About Me',
         link: root + pageMap + 'construction.html',
         target: '_self',
         catergorie: "main",
+        icon: 'person',
     },
     {
         titel: 'Contact',
         link: root + pageMap + 'construction.html',
         target: '_self',
         catergorie: "main",
+        icon: 'mail',
     },
     {
         titel: 'Film finder',
         link: root + pageMap + 'filmfinder.html',
         target: '_self',
         catergorie: "projects",
+        icon: 'home',
     },
     {
         titel: 'Random Persons',
         link: root + pageMap + 'randomPerson.html',
         target: '_self',
         catergorie: "projects",
+        icon: 'home',
     },
 ];
