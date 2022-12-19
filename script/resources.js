@@ -144,4 +144,11 @@ const navigatie = [
         catergorie: "projects",
         icon: 'home',
     },
+    {
+        titel: 'PokeApi',
+        link: root + pageMap + 'pokeAPI.html',
+        target: '_self',
+        catergorie: "projects",
+        icon: 'api',
+    },
 ];

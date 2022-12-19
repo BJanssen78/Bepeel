@@ -21,6 +21,27 @@
     }
 }
 
+@mixin side-btn{
+    text-decoration: none;
+            color: $clr-blk;
+            background-color: $clr-ylw;
+            border-radius: 25px;
+            font-size: 1.4rem;
+            border: 1px solid $clr-ylw;
+            box-shadow: 2px 4px $clr-red;
+            transition: 350ms background-color, box-shadow ease-out;
+            cursor: pointer;
+            // margin: 5px;
+            padding: 5px;
+            min-width: 190px;
+            max-width: 200px;
+            &:hover{
+                box-shadow: 0px 0px $clr-red;
+                background-color: $clr-red;
+                border: 1px solid $clr-blk;
+            }
+}
+
 @mixin img-round{
     margin: 15px;
     width: 100px;
@@ -177,3 +198,9 @@
 }
 // end of filmfinder
 
+// project PokeAPI
+@mixin pokemon{
+    text-align: left;
+    margin-left: 25px;
+    cursor: pointer;
+}
