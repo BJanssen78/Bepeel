@@ -11,7 +11,6 @@ body{
     font-size: $fnt-size;
     text-align: center;
 }
-
 #header{
     display: flex;
     text-shadow: 2px 2px $clr-red;
@@ -22,7 +21,6 @@ body{
     justify-content: center;
     
 }
-
 #navigatie{
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +35,6 @@ body{
     @include navigatie;
     @include navi-scr-view;
 }
-
 .test-img{
     @include img-oval;
 }
@@ -67,32 +64,34 @@ body{
 
         .side-nav-btn{
             @include side-btn;
-            // text-decoration: none;
-            // color: $clr-blk;
-            // background-color: $clr-ylw;
-            // border-radius: 25px;
-            // font-size: 1.4rem;
-            // border: 1px solid $clr-ylw;
-            // box-shadow: 2px 4px $clr-red;
-            // transition: 350ms background-color, box-shadow ease-out;
-            // cursor: pointer;
-            // // margin: 5px;
-            // padding: 5px;
-            // min-width: 190px;
-            // max-width: 200px;
-            // &:hover{
-            //     box-shadow: 0px 0px $clr-red;
-            //     background-color: $clr-red;
-            //     border: 1px solid $clr-blk;
-            // }
         }
     }
 }
+#content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin: auto;
+    .lijst-container{
+        position: relative;
+        width: 50%;
+    }
 
+}
 .pokemon-btn{
     margin: 10px;
     @include side-btn;
 }
 .pokemon-lijst{
     @include pokemon;
+    position: relative;
+    width: 50%;
+}
+.pokemon-frame{
+    position: relative;
+    width: 50%;
+
+    .pokemon-image{
+        position: relative;
+        width: 150%;
+    }
 }
