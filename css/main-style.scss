@@ -95,3 +95,18 @@ body{
         width: 150%;
     }
 }
+
+
+@media only screen and (max-width:1023px) {
+    .paintball-desktop-view{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:1024px) {
+
+    .paintball-mobile-view{
+        display: none;
+    }
+}

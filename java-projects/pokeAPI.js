@@ -58,10 +58,56 @@ async function getPokemonDetails (pokemonName){
     }
 };
 
-async function getData(newApiLink){
+async function getData(){
+    // console.log("getData function")
+    // console.log(newApiLink);
     console.log(newApiLink);
     try {
         const res = await fetch(newApiLink)
+        
+        
+        .then((response) => response.json())
+        .then((data) => {
+            // console.log(data);
+
+            let getDataToArray = Object.values(data.results);
+
+            // console.log(getDataToArray);
+
+            getDataToArray.map(pokemon => pokemon)
+            .forEach(element => {
+
+                let createLi = document.createElement('li');
+                createUL.appendChild(createLi);
+                createLi.setAttribute('class', 'pokemon');
+                createLi.setAttribute('id', element.name);
+                createLi.innerHTML = element.name;
+
+                // console.log(element.url)
+
+
+            })})
+            let pokemonLijst = document.querySelectorAll('#pokemon-lijst .pokemon');
+            
+            Array.from(pokemonLijst).forEach(function(btn){
+                btn.addEventListener('click', function(liEvent){
+                    let pokemonName = liEvent.target.innerHTML;
+                    getPokemonDetails (pokemonName);
+                    // console.log(liEvent.target.innerHTML);
+            })});           
+
+    }
+    catch (error){
+        console.log(error);
+    }
+};
+
+async function getPokemon(offset){
+    // console.log("getData function")
+    // console.log(newApiLink);
+    // console.log(newApiLink);
+    try {
+        const res = await fetch(apiLink+offsetLink+offset)
         
         
         .then((response) => response.json())
@@ -106,7 +152,7 @@ createBtnNext.addEventListener('click', function(btn){
     createDivLijst.replaceChildren();
     let newApiLink = apiLink+offsetLink+offset;
     console.log(newApiLink);
-    getData(newApiLink);
+    getPokemon(offset);
 });
 
 createBtnPrev.addEventListener('click', function(btn){
@@ -117,7 +163,7 @@ createBtnPrev.addEventListener('click', function(btn){
         offset -= 20;
         createDivLijst.replaceChildren();
         let newApiLink = apiLink+offsetLink+offset;
-        getData(newApiLink);
+        getPokemon();
     }
 });
-getData(newApiLink);
+getData();
