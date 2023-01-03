@@ -204,3 +204,20 @@
     margin-left: 25px;
     cursor: pointer;
 }
+
+@mixin digit-position{
+    .team-a1{
+        left: 5%;
+        // top: 100px;
+    }
+    .team-a2{
+        left: 25%;
+    }
+    .team-b1{
+        right: 25%;
+        // top: 100px;
+    }
+    .team-b2{
+        right: 5%;
+    }
+}
